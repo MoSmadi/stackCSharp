@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace StackTask;
 
-Console.WriteLine("Hello, World!");
+static class Program
+{
+    static void Main(string[] args)
+    {
+        var IntStack = new MyStack<int>();
+        var DoubleStack = new MyStack<double>();
+        var StringStack = new MyStack<string>();
+    }
+}
