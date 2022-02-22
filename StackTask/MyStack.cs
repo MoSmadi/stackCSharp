@@ -2,15 +2,14 @@ namespace StackTask;
 
 public class MyStack <T>
 {
-    private readonly T[] _items;
-    private int _index = -1;
-    public MyStack()// =>   _items = new T[10];
-    {
-        _items = new T[10];
-    }
+    private readonly List<T> _items;
     
-    public MyStack(int size)// =>   _items = new T[size];
+    public MyStack()
     {
-        _items = new T[size];
+        _items = new List<T>();
+    }
+    public MyStack(List<T> items)
+    {
+        _items = items;
     }
 }
