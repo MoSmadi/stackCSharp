@@ -12,4 +12,9 @@ public class MyStack <T>
     {
         _items = items;
     }
+
+    public void Clear()
+    {
+        _items.Clear();
+    }
 }
