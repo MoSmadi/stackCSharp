@@ -12,4 +12,14 @@ public class MyStack <T>
     {
         _items = items;
     }
+    
+    // remove the top of the stack and return it
+    public T Pull()
+    {
+        var length = _items.Count;
+        var top = _items.ElementAt(length-1);
+        _items.RemoveAt(length-1);
+        //Console.WriteLine(top);
+        return top;
+    }
 }
