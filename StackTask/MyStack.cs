@@ -12,4 +12,17 @@ public class MyStack <T>
     {
         _items = items;
     }
+
+    // return the top of stack without delete it
+    public T? Peak()
+    {
+        var length = _items.Count;
+        
+        if (length == 0)
+        {
+            return default;
+        }
+        var top = _items.ElementAt(length-1);
+        return top;   
+    }
 }
