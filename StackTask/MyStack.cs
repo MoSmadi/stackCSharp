@@ -14,7 +14,7 @@ public class MyStack <T>
     }
     
     // remove the top of the stack and return it
-    public T Pull()
+    public T Pop()
     {
         var length = _items.Count;
         var top = _items.ElementAt(length-1);
