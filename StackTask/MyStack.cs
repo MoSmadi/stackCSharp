@@ -12,4 +12,13 @@ public class MyStack <T>
     {
         _items = items;
     }
+
+    // print all the list
+    public void Print()
+    {
+        foreach (var t in _items)
+        {
+            Console.WriteLine(t);
+        }
+    }
 }
