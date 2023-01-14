@@ -13,6 +13,21 @@ public class MyStack <T>
         _items = items;
     }
     
+    // remove the top of the stack and return it
+    public T? Pop()
+    {
+        var length = _items.Count;
+
+        if (length == 0)
+        {
+            return default;
+        }
+        
+        var top = _items.ElementAt(length-1);
+        _items.RemoveAt(length-1);
+        //Console.WriteLine(top);
+        return top;
+
     // add push method that take a parameter and push it to the list
     public void Push(T item) 
     {
