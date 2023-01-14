@@ -12,4 +12,10 @@ public class MyStack <T>
     {
         _items = items;
     }
+    
+    // add push method that take a parameter and push it to the list
+    public void Push(T item) 
+    {
+        _items.Add(item);
+    }
 }
