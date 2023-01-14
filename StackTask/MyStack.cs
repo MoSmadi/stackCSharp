@@ -27,5 +27,10 @@ public class MyStack <T>
         _items.RemoveAt(length-1);
         //Console.WriteLine(top);
         return top;
+
+    // add push method that take a parameter and push it to the list
+    public void Push(T item) 
+    {
+        _items.Add(item);
     }
 }
